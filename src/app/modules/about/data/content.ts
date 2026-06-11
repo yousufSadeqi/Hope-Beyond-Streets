@@ -19,8 +19,7 @@ export const ABOUT_NARRATIVE = {
   ],
   highlight: "No child should grow up on the streets because of paperwork.",
   image: "/about/about-children-dignity-field.jpeg",
-  imageAlt:
-    "Respectful street outreach in Lyon, dignified framing, evening light, no child faces visible",
+  imageAlt: "Field outreach",
 };
 
 export const ABOUT_VALUES_EXPANDED = HOME_VALUES.map((value) => {
@@ -55,8 +54,7 @@ export const ABOUT_OBJECTIVES = [
 
 export const ABOUT_TRANSPARENCY = {
   image: "/about/about-transparency-ledger.png",
-  imageAlt:
-    "Donation transparency dashboard showing mapped gifts, school kit, meals, hygiene bundle, and outreach supplies with euro amounts",
+  imageAlt: "Donation ledger",
 };
 
 export const ABOUT_PARTNERS = {
@@ -72,8 +70,7 @@ export const ABOUT_PARTNERS = {
     "Institutional partnerships open doors to housing, classrooms, and dignified pathways off the streets.",
   ],
   image: "/about/about-ngo-partnership.png",
-  imageAlt:
-    "NGO coordinators shaking hands in front of a shared community resource board, professional, collaborative setting",
+  imageAlt: "NGO partners",
   futureHeading: "Organisations we hope to collaborate with",
   futureNote: "Goals, not endorsements.",
   cta: "Propose a collaboration",

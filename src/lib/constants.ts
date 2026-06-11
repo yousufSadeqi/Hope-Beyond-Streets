@@ -1,7 +1,16 @@
+/** Full blog guide PDF (source: docs/Blog anglais.pdf) */
+export const BLOG_GUIDE_PDF = {
+  href: "/docs/blog-anglais.pdf",
+  label: "Learn more",
+  title: "Blog guide (PDF)",
+  description:
+    "In-depth guide on child poverty, education, rights, and how we help families in Lyon.",
+};
+
 export const BRAND = {
   name: "Hope Beyond Streets",
-  logo: "/websiteLogos/Mainlogo.png",
-  logoAlt: "Hope Beyond Streets, girl with pink balloon",
+  logo: "/websiteLogos/MainLogo.png",
+  logoAlt: "Hope logo",
   tagline: "Donating is loving, caring and helping",
   mission:
     "Meals, school access, and family guidance for undocumented children and families in Lyon.",
@@ -10,7 +19,7 @@ export const BRAND = {
   contactEmail: "contact@hopebeyondstreets.org",
   partnerEmail: "partners@hopebeyondstreets.org",
   social: {
-    instagram: "instagram video",
+    instagram: "https://www.instagram.com/hope.beyond.streets?igsh=ZTc3cjFwamdzbHpr&utm_source=qr",
     youtube: "Youtube video",
   },
 };
@@ -48,6 +57,12 @@ export const FOOTER_SECTIONS: FooterSection[] = [
         name: "Blog & Updates",
         href: "/blog",
         description: "Field stories and impact reports from Lyon",
+      },
+      {
+        name: BLOG_GUIDE_PDF.label,
+        href: BLOG_GUIDE_PDF.href,
+        description: BLOG_GUIDE_PDF.description,
+        external: true,
       },
       {
         name: "Campaign Posters",

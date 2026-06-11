@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { BrandLogo } from "@/components/layout/brand-logo";
-import { BRAND, FOOTER_SECTIONS } from "@/lib/constants";
+import { BLOG_GUIDE_PDF, BRAND, FOOTER_SECTIONS } from "@/lib/constants";
 
 function SocialIconLink({
   href,
@@ -39,8 +39,15 @@ function FooterLinkItem({
     "text-sm text-brand-muted hover:text-brand-red transition-colors duration-200 leading-snug";
 
   if (external || href.startsWith("mailto:")) {
+    const openInNewTab = external && !href.startsWith("mailto:");
     return (
-      <a href={href} className={className}>
+      <a
+        href={href}
+        className={className}
+        {...(openInNewTab
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {})}
+      >
         {name}
       </a>
     );
@@ -101,6 +108,14 @@ export function Footer() {
             </p>
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:shrink-0">
+            <a
+              href={BLOG_GUIDE_PDF.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-brand-red px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-red-dark"
+            >
+              {BLOG_GUIDE_PDF.label}
+            </a>
             <Link
               href="/blog"
               className="inline-flex items-center justify-center rounded-lg border border-brand-border bg-brand-white px-5 py-2.5 text-sm font-semibold text-brand-text transition-colors hover:border-brand-red/30 hover:text-brand-red"
@@ -109,7 +124,7 @@ export function Footer() {
             </Link>
             <Link
               href="/posters"
-              className="inline-flex items-center justify-center rounded-lg bg-brand-red px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand-red-dark"
+              className="inline-flex items-center justify-center rounded-lg border border-brand-border bg-brand-white px-5 py-2.5 text-sm font-semibold text-brand-text transition-colors hover:border-brand-red/30 hover:text-brand-red"
             >
               Download Posters
             </Link>

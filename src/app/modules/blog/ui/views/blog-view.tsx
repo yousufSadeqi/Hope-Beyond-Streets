@@ -17,7 +17,7 @@ import { BlogFeaturedHero } from "@/app/modules/blog/ui/components/blog-featured
 import { BlogPostCard } from "@/app/modules/blog/ui/components/blog-post-card";
 import { BlogBentoPanel } from "@/app/modules/blog/ui/components/blog-bento-panel";
 import { BlogCtaBanner } from "@/app/modules/blog/ui/components/blog-cta-banner";
-import { BRAND } from "@/lib/constants";
+import { BLOG_GUIDE_PDF, BRAND } from "@/lib/constants";
 
 export function BlogView() {
   const searchParams = useSearchParams();
@@ -75,8 +75,11 @@ export function BlogView() {
             Blog
           </h1>
           <p className="max-w-2xl text-base md:text-lg text-brand-muted leading-relaxed mb-8">
-            Child protection insights, education, and stories from our mission with
-            undocumented families across France, dignity, inclusion, and direct action.
+            This blog raises awareness about child poverty, homelessness, and the daily
+            struggles faced by undocumented families in France. Behind every child asking
+            for help in the streets, there is often a story of instability that many people
+            do not fully see. Our vision is simple: every child deserves safety, education,
+            and hope for the future.
           </p>
           <BlogTopicNav activeTopic={activeTopic} onTopicChange={setActiveTopic} />
         </Container>
@@ -141,9 +144,18 @@ export function BlogView() {
             Explore more
           </h2>
           <p className="text-brand-muted mb-6 leading-relaxed">
-            Download campaign posters or get in touch to volunteer in Lyon.
+            Read our full blog guide for in-depth context on child poverty, education,
+            and family rights in France, or download campaign posters to share in Lyon.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
+            <a
+              href={BLOG_GUIDE_PDF.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-brand-red px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-red-dark transition-colors"
+            >
+              {BLOG_GUIDE_PDF.label}
+            </a>
             <a
               href="/posters"
               className="inline-flex items-center justify-center rounded-lg border border-brand-border bg-brand-white px-5 py-2.5 text-sm font-semibold text-brand-text hover:border-brand-red/30 transition-colors"
@@ -152,7 +164,7 @@ export function BlogView() {
             </a>
             <a
               href={`mailto:${BRAND.contactEmail}?subject=Blog%20updates`}
-              className="inline-flex items-center justify-center rounded-lg bg-brand-red px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-red-dark transition-colors"
+              className="inline-flex items-center justify-center rounded-lg border border-brand-border bg-brand-white px-5 py-2.5 text-sm font-semibold text-brand-text hover:border-brand-red/30 transition-colors"
             >
               Get updates by email
             </a>

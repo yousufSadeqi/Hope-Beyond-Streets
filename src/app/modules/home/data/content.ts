@@ -7,10 +7,8 @@
     "Meals, school access, and family guidance for undocumented children and families in Lyon.",
   image: "/home/hero-lyon-tram-station.png",
   imageMobile: "/home/hero-lyon-tram-station-mobile.png",
-  imageAlt:
-    "Lyon tram station, child kneeling on the platform with a pink balloon, seen from behind, TCL tram and station shelter visible, clear daylight",
-  imageMobileAlt:
-    "Mobile hero, Lyon tram station, child with pink balloon on pavement near TCL tram stop, clear documentary daylight, seen from behind",
+  imageAlt: "Lyon tram",
+  imageMobileAlt: "Tram hero",
 };
 
 export const HOME_DONATION = {
@@ -36,8 +34,7 @@ export const HOME_PROBLEM = {
   body:
     "Undocumented children in France often miss housing, healthcare, and school. Emergency aid saves nights but rarely builds a path forward. We exist to close that gap with direct field action in Lyon.",
   image: "/home/problem-street-vulnerability-france.png",
-  imageAlt:
-    "Symbolic photo of an empty park bench at dusk in a French city with a child's backpack beside it, quiet, emotional, no identifiable people",
+  imageAlt: "Empty bench",
 };
 
 export const HOME_PROGRAMS = {
@@ -53,8 +50,7 @@ export const HOME_PROGRAMS = {
       description:
         "When a family has nothing left tonight, volunteers deliver food, hygiene essentials, warm clothing, and school materials, often within 48 hours of an urgent referral.",
       image: "/home/program-emergency-supplies.png",
-      imageAlt:
-        "Volunteers packing sealed food and hygiene kits on a table in a community hall, warm lighting, organised NGO workspace",
+      imageAlt: "Food kits",
     },
     {
       id: "protection",
@@ -63,9 +59,8 @@ export const HOME_PROGRAMS = {
       tagline: "School access running with care",
       description:
         "Tutoring, French language support, safe study spaces, and digital access, so children who missed school can catch up without shame.",
-      image: "/home/program-child-education.png",
-      imageAlt:
-        "Tutor helping a child with French homework in a bright safe-space room, faces partially hidden, welcoming atmosphere",
+      image: "/home/program-child-education.jpeg",
+      imageAlt: "Child tutoring",
     },
     {
       id: "guidance",
@@ -74,9 +69,8 @@ export const HOME_PROGRAMS = {
       tagline: "Navigate the system, together",
       description:
         "Legal orientation, administrative steps, shelter referrals, and introductions to partners who can actually move a family's case forward.",
-      image: "/home/program-family-guidance.png",
-      imageAlt:
-        "Counsellor and parent reviewing printed resource flyers at a desk, confidential, professional NGO setting",
+      image: "/home/program-family-guidance1.png",
+      imageAlt: "Family guidance",
     },
     {
       id: "outreach",
@@ -86,8 +80,7 @@ export const HOME_PROGRAMS = {
       description:
         "Evening teams in Lyon identify urgent cases, distribute essentials on the spot, and build follow-up plans that don't end when the night does.",
       image: "/home/program-street-outreach.png",
-      imageAlt:
-        "Outreach volunteers in branded vests speaking respectfully with an adult at a Lyon metro station, evening light, dignified framing",
+      imageAlt: "Street outreach",
     },
   ],
 } as const;
@@ -134,6 +127,7 @@ export const HOME_BLOG_TEASER = {
   description:
     "Stories, ethics, and honest updates as we grow, not polished annual reports.",
   linkLabel: "Read the blog",
+  learnMoreLabel: "Learn more",
 } as const;
 
 /** Used on the About page, not shown on the home landing page */
@@ -164,8 +158,7 @@ export const HOME_DIFFERENCE = {
     },
   ],
   image: "/home/difference-community-hope.png",
-  imageAlt:
-    "Community event in Lyon with volunteers and families in the background, uplifting, diverse, banners visible, no close-ups of minors",
+  imageAlt: "Community event",
 };
 
 export const HOME_CTA = {

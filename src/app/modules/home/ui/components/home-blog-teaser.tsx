@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/container";
 import { BlogImage } from "@/app/modules/blog/ui/components/blog-image";
 import { getFeaturedPosts } from "@/app/modules/blog/data/posts";
 import { HOME_BLOG_TEASER } from "@/app/modules/home/data/content";
+import { BLOG_GUIDE_PDF } from "@/lib/constants";
 
 export function HomeBlogTeaser() {
   const post = getFeaturedPosts()[0];
@@ -21,12 +22,22 @@ export function HomeBlogTeaser() {
               {HOME_BLOG_TEASER.title}
             </h2>
             <p className="text-brand-muted leading-relaxed mb-6">{HOME_BLOG_TEASER.description}</p>
-            <Link
-              href="/blog"
-              className="inline-flex text-sm font-semibold text-brand-red hover:underline"
-            >
-              {HOME_BLOG_TEASER.linkLabel} →
-            </Link>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              <a
+                href={BLOG_GUIDE_PDF.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex text-sm font-semibold text-brand-red hover:underline"
+              >
+                {HOME_BLOG_TEASER.learnMoreLabel} →
+              </a>
+              <Link
+                href="/blog"
+                className="inline-flex text-sm font-semibold text-brand-text hover:text-brand-red hover:underline transition-colors"
+              >
+                {HOME_BLOG_TEASER.linkLabel} →
+              </Link>
+            </div>
           </div>
 
           <Link

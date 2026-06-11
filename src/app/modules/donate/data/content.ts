@@ -8,8 +8,7 @@ export const DONATE_HERO = {
   description:
     "Financial gifts, supplies, time, or housing, choose how you show up for families in Lyon.",
   image: "/donate/hero-give-in-every-way.jpg",
-  imageAlt:
-    "Collage-style hero, volunteers sorting donated clothes, a tutor with a child studying, and warm meal packs, dignified NGO field work, no identifiable minors",
+  imageAlt: "Ways to help",
 };
 
 export const DONATE_MONEY = {
@@ -18,8 +17,7 @@ export const DONATE_MONEY = {
     "Sponsor a child's month or give a one-time gift. Every euro is mapped to a concrete field need.",
   cta: "Donate now",
   image: "/donate/financial-gift-impact.png",
-  imageAlt:
-    "Hands placing coins and bills into a transparent donation box labelled with impact categories, clean, trustworthy, close-up, no faces",
+  imageAlt: "Donation box",
 };
 
 export const DONATE_CONTRIBUTION_NAV = [
@@ -42,8 +40,7 @@ export const DONATE_IN_KIND = {
       description: "Warm coats, shoes, school uniforms, and age-appropriate clothing for children and teens.",
       examples: ["Winter jackets", "Shoes & trainers", "School uniforms", "Baby clothing"],
       image: "/donate/in-kind-clothing-shoes.jpg",
-      imageAlt:
-        "Neatly folded children's winter coats and shoes on shelves ready for distribution, colourful, hopeful, no people in frame",
+      imageAlt: "Donated clothes",
     },
     {
       id: "school",
@@ -51,8 +48,7 @@ export const DONATE_IN_KIND = {
       description: "Materials that help children return to or stay in school through our School First campaign.",
       examples: ["Backpacks", "Notebooks & pens", "Calculators", "French workbooks"],
       image: "/donate/in-kind-school-supplies.jpg",
-      imageAlt:
-        "Stack of new backpacks filled with notebooks, pens, and French workbooks on a school preparation table",
+      imageAlt: "School supplies",
     },
   ],
   ctaLabel: "Send your donation pack",
@@ -73,8 +69,7 @@ export const DONATE_VOLUNTEER = {
   description:
     "Volunteers are the backbone of our field work. Whether you have two hours a week or can commit regularly, your time changes outcomes for children and families.",
   image: "/donate/volunteer-teaching-mentoring.avif",
-  imageAlt:
-    "Adult volunteer tutoring a child at a desk in a bright safe-space room, faces partially hidden, patient and encouraging atmosphere",
+  imageAlt: "Volunteer tutor",
   items: [
     {
       id: "teaching",
@@ -121,9 +116,8 @@ export const DONATE_HOUSING = {
   title: "Offer housing or shelter connections",
   description:
     "Stable housing is one of the biggest barriers for undocumented families. If you can host, refer a property, or connect us with shelter partners, you help break the cycle of street vulnerability.",
-  image: "/donate/housing-safe-home-keys.PNG",
-  imageAlt:
-    "Symbolic photo of house keys on a welcome mat outside a modest apartment door, warm light, safe and inviting, no people visible",
+  image: "/donate/housing-safe-home-keys.png",
+  imageAlt: "House keys",
   items: [
     {
       id: "host",
