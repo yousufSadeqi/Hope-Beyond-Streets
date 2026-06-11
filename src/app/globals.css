@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --color-brand-red: #d62828;
+  --color-brand-red-dark: #a61e1e;
+  --color-brand-red-soft: #fdecec;
+  --color-brand-white: #ffffff;
+  --color-brand-bg: #fafafa;
+  --color-brand-text: #1f2937;
+  --color-brand-muted: #6b7280;
+  --color-brand-border: #e5e7eb;
+
+  /* Font mappings */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-mono, monospace;
+}
+
+@theme {
+  --color-brand-red: var(--color-brand-red);
+  --color-brand-red-dark: var(--color-brand-red-dark);
+  --color-brand-red-soft: var(--color-brand-red-soft);
+  --color-brand-white: var(--color-brand-white);
+  --color-brand-bg: var(--color-brand-bg);
+  --color-brand-text: var(--color-brand-text);
+  --color-brand-muted: var(--color-brand-muted);
+  --color-brand-border: var(--color-brand-border);
+
+  /* Override standard background and text/foreground colors */
+  --color-background: var(--color-brand-bg);
+  --color-foreground: var(--color-brand-text);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+}
+
+/* Base styles and defaults */
+html,
+body {
+  height: 100%;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Accessibility focus outline */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-red);
+  outline-offset: 2px;
+}
