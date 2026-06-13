@@ -20,7 +20,7 @@ export const BRAND = {
   partnerEmail: "partners@hopebeyondstreets.org",
   social: {
     instagram: "https://www.instagram.com/hope.beyond.streets?igsh=ZTc3cjFwamdzbHpr&utm_source=qr",
-    youtube: "Youtube video",
+    youtube: "https://www.youtube.com/@HopeBeyondtheStreets",
   },
 };
 

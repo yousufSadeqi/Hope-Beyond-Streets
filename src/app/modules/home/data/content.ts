@@ -37,6 +37,16 @@ export const HOME_PROBLEM = {
   imageAlt: "Empty bench",
 };
 
+export const HOME_VIDEO = {
+  eyebrow: "Watch",
+  title: "See why this mission matters",
+  description:
+    "A closer look at child poverty, street realities, and how your support helps families move from survival to stability.",
+  youtubeUrl: "https://www.youtube.com/watch?v=srnYpc6abFY",
+  youtubeEmbedUrl: "https://www.youtube.com/embed/srnYpc6abFY",
+  cta: "Watch on YouTube",
+} as const;
+
 export const HOME_PROGRAMS = {
   eyebrow: "One platform for every need",
   title: "Get more done with donors and volunteers working side by side",
